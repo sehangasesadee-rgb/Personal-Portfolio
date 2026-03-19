@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="keywords" content="web, html, css, javascript, js, java, python">
+    <meta name="description" content="World best web development tutorials">
+    <meta name="author" content="IJSE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Flex Layout</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+
+    <style>
+
+        #nav {
+            background-color: yellow;
+            display: flex;
+            /*flex-direction: row; !* column, row (default) *!*/
+            flex-direction: row-reverse; /* column-reverse, row-reverse */
+            background: linear-gradient(20deg,yellow,white);
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-left: 0px;
+
+        }
+
+        #nav > div {
+            width: 50px;
+            height: 50px;
+            /*background-color:yellow;*/
+           /*margin-left: 10px;*/
+            font-size: 28px;
+            justify-content: space-between;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        section>.image{
+            width: 100px;
+            height: 100px;
+            padding-left: 800px;
+            padding-top: 100px;
+        }
+        section>#t1{
+            color: yellow;
+            font-size: 25px;
+            padding-top: 100px;
+
+        }
+        section>#t2{
+            color: black;
+            font-size: 30px;
+        }
+
+    </style>
+
 
 </head>
+
 <body>
 
+<section id="nav">
+    <div>Contact</div>
+    <div>Project</div>
+    <div>About</div>
+    <div>Home</div>
+</section>
+<section>
+<div id="t1">Software Engineering Student</div>
+    <div id="t2">Hello, my name is Dihini Sehanga</div>
+<div class="image">
+    <div>
+        <img src="assests/lib/image/Gemini_Generated_Image_x2qnoax2qnoax2qn-removebg-preview.png">
+    </div>
+</div>
+</section>
+
 </body>
+
 </html>
