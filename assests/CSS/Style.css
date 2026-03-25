@@ -86,6 +86,7 @@ body {
     color: black;
 }
 
+
 .btn-outline {
     border: 2px solid white;
     color: white;
@@ -100,4 +101,40 @@ body {
     width: 100%;
     max-width: 550px;
     height: auto;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8%;
+    min-height: 80vh;
+}
+
+
+#about_pic{
+    width: 10px;
+    width: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.btn-download{
+    background-color: #f1c40f;
+    color: black;
+    margin: 10px 0;
+}
+#te1{
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    margin: 10px 0;
+    line-height: 1.1;
+}
+#te2{
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 10px 0;
+    line-height: 1.1;
 }
