@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    /*font-family: 'Poppins', Arial, sans-serif; */
     color: white;
     overflow-x: hidden;
 }
@@ -15,3 +14,90 @@ body {
     padding: 10px 50px;
 }
 
+#nav > a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 25px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8%;
+    min-height: 80vh;
+}
+
+#text {
+    flex: 1;
+}
+
+#pic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+#t1 {
+    color: #f1c40f;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+#t2 {
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    margin: 10px 0;
+    line-height: 1.1;
+}
+
+#t3 {
+    color: #bdc3c7;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+
+.btn-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-yellow {
+    background-color: #f1c40f;
+    color: black;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+.image img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
