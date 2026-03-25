@@ -1,4 +1,17 @@
-h4 {
-    color: dodgerblue;
-    background-color: lightblue;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /*font-family: 'Poppins', Arial, sans-serif; */
+    color: white;
+    overflow-x: hidden;
 }
+
+
+#nav {
+    display: flex;
+    flex-direction: row-reverse;
+    background: linear-gradient(90deg, darkgoldenrod,yellow, white);
+    padding: 10px 50px;
+}
+
