@@ -7,11 +7,15 @@ body {
     overflow-x: hidden;
 }
 
+
 #nav {
     display: flex;
     flex-direction: row-reverse;
     background: linear-gradient(90deg, darkgoldenrod, yellow, white);
     padding: 10px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #nav > a {
@@ -20,6 +24,7 @@ body {
     padding: 10px 20px;
     color: black;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .main-container {
@@ -40,12 +45,23 @@ body {
 #t1 {
     color: #f1c40f; font-weight: bold; margin-bottom: 10px;
 }
+
 #t2 {
-    font-size: 60px; font-weight: 800; line-height: 1.1; margin: 15px 0;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 15px 0;
+    background: linear-gradient(90deg, #ffffff, #f1c40f, #ffffff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite, fadeInUp 1s ease-out forwards;
 }
+
 #t3 {
     color: #bdc3c7; font-size: 18px; line-height: 1.6; max-width: 500px; margin-bottom: 30px;
 }
+
 
 .about {
     display: flex;
@@ -69,6 +85,7 @@ body {
     font-size: 20px; line-height: 1.5; color: #ecf0f1; margin-bottom: 30px;
 }
 
+
 .circle-frame {
     width: 400px;
     height: 400px;
@@ -79,19 +96,12 @@ body {
     animation: floatImage 4s ease-in-out infinite;
 }
 
-
 .circle-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; height: 100%; object-fit: cover;
 }
-.circle-frame:hover{
-    animation-play-state: paused;
-    cursor: pointer;
-
-
+.circle-frame:hover {
+    animation-play-state: paused; cursor: pointer;
 }
-
 
 .image img {
     width: 100%;
@@ -100,36 +110,97 @@ body {
     animation: floatImage 4s ease-in-out infinite;
 }
 
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0; transform: translateY(20px);
+    } to {
+              opacity: 1; transform: translateY(0);
+          }
+}
 @keyframes floatImage {
     0%, 100% {
         transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
+    } 50% {
+              transform: translateY(-15px);
+          }
 }
+
 
 .btn-group {
     display: flex; gap: 15px;
 }
+
 .btn {
     padding: 12px 28px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
+    display: inline-block;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.btn-yellow, .btn-download {
-    background-color: #f1c40f;
-    color: black;
-}
-
-.btn-outline {
-    border: 2px solid white;
-    color: white;
-}
+.btn-yellow, .btn-download { background-color: #f1c40f; color: black; }
+.btn-outline { border: 2px solid white; color: white; }
 
 .btn:hover {
-    transform: scale(1.05);
+    transform: scale(1.0) translateY(-8px);
+    /*box-shadow: 0 10px 20px rgba(241, 196, 15, 0.4);*/
+}
+
+.btn-outline:hover {
+    background-color: #f1c40f; border-color: #f1c40f; color: black;
+}
+
+.btn:active {
+    transform: scale(0.95) translateY(0);
+}
+
+
+@media screen and (max-width: 992px) {
+    .main-container, .about {
+        flex-direction: column; text-align: center; padding: 50px 5%;
+    }
+    #text, #text02 {
+        padding: 0; margin-bottom: 40px; order: 2;
+    }
+    #pic, #about_pic {
+        order: 1; margin-bottom: 30px;
+    }
+    #t2, #te1 {
+        font-size: 50px;
+    }
+    .btn-group {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav {
+        padding: 10px; justify-content: center; flex-wrap: wrap;
+    }
+    #nav > a {
+        font-size: 14px; padding: 8px 12px;
+    }
+    #t2, #te1 {
+        font-size: 35px;
+    }
+    .circle-frame {
+        width: 300px; height: 300px;
+    }
+    .image img {
+        max-width: 320px;
+    }
+}
+/*#footer-image{*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*}*/
+.f-image{
+    width: 100%;
+    height: 300px;
 }
