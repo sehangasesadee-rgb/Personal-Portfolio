@@ -241,4 +241,22 @@ body {
     transition: transform 0.5s ease;
 }
 
+.gallery-item:hover {
+    border-color: #f1c40f;
+    box-shadow: 0 10px 30px rgba(241, 196, 15, 0.2);
+    transform: translateY(-5px);
+}
 
+.gallery-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+
+@media screen and (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+    .gallery-item {
+        height: 200px;
+    }
+}
