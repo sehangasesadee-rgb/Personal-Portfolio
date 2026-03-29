@@ -260,3 +260,14 @@ body {
         height: 200px;
     }
 }
+
+
+#tech-stack {
+    padding: 80px 8% 40px 8%;
+    text-align: center;
+}
+
+#tech-header {
+    margin-bottom: 50px;
+}
+
