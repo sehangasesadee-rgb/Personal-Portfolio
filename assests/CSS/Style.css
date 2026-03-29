@@ -205,3 +205,16 @@ body {
     height: 300px;
 }
 
+#gallery {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+#g-text {
+         font-size: 14px;
+         letter-spacing: 3px;
+         color: white;
+         margin-bottom: 40px;
+         text-transform: uppercase;
+ }
+
