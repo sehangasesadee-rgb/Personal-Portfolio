@@ -314,4 +314,18 @@ body {
     margin-bottom: 15px;
 }
 
+.tech-card span {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.tech-card:hover {
+    transform: translateY(-15px);
+    border-color: #f1c40f;
+    box-shadow: 0 10px 30px rgba(241, 196, 15, 0.2);
+    background: rgba(241, 196, 15, 0.1);
+}
+
+
 
