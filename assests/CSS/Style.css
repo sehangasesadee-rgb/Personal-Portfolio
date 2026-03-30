@@ -345,3 +345,10 @@ body {
     background-color: #050505;
 }
 
+#p-sub {
+    color: #f1c40f;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
