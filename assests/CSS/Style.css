@@ -405,3 +405,21 @@ body {
     transition: 0.3s;
 }
 
+
+.project-card:hover {
+    transform: translateY(-15px);
+    border-color: #f1c40f;
+    background: rgba(241, 196, 15, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.p-link:hover {
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #text-p { font-size: 40px; }
+    .project-card { width: 100%; }
+}
+
