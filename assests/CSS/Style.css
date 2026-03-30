@@ -520,3 +520,28 @@ button {
 .btn:active {
     transform: scale(0.95) translateY(0);
 }
+
+
+
+@media screen and (max-width: 600px) {
+    #contact {
+        padding: 60px 5%;
+    }
+
+    .contact-info .title {
+        font-size: 35px;
+    }
+
+    .social-icons i {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    #form {
+        padding: 25px;
+    }
+
+    #form button {
+        width: 100%;
+    }
+}
