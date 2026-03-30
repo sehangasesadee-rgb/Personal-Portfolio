@@ -81,6 +81,34 @@ body {
 #te1 {
     font-size: 60px; font-weight: 800; margin-bottom: 20px;
 }
+
+.arrow-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.arrow-link i {
+    font-size: 45px;
+    color: #f1c40f;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.arrow-link:hover i {
+    transform: translateX(12px);
+    color: #f1c40f;
+}
+
+
+.arrow-link:active i {
+    color: #f1c40f;
+}
+
+@media screen and (max-width: 600px) {
+    #te1 { font-size: 35px; }
+    .arrow-link i { font-size: 28px; }
+}
 #te2 {
     font-size: 20px; line-height: 1.5; color: #ecf0f1; margin-bottom: 30px;
 }
