@@ -283,7 +283,7 @@ body {
 #tech-title {
     font-size: 55px;
     font-weight: 800;
-    background: linear-gradient(90deg, #ffffff, #f1c40f);
+    background: linear-gradient(90deg, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
