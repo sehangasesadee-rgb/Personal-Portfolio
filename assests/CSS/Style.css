@@ -368,3 +368,13 @@ body {
     flex-wrap: wrap;
 }
 
+.project-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 50px 30px;
+    border-radius: 25px;
+    width: 400px;
+    transition: 0.4s all ease;
+    backdrop-filter: blur(15px);
+}
+
