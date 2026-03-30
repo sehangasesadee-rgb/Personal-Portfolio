@@ -378,3 +378,30 @@ body {
     backdrop-filter: blur(15px);
 }
 
+.icon-box {
+    font-size: 45px;
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.project-card p {
+    color: #bdc3c7;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+.p-link {
+    text-decoration: none;
+    color: #f1c40f;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
