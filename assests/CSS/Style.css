@@ -213,7 +213,7 @@ body {
 #g-text {
          font-size: 14px;
          letter-spacing: 3px;
-         color: white;
+         color: #f1c40f;
          margin-bottom: 40px;
          text-transform: uppercase;
  }
@@ -283,7 +283,7 @@ body {
 #tech-title {
     font-size: 55px;
     font-weight: 800;
-    background: linear-gradient(90deg, white);
+    background: linear-gradient(90deg,white,white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -356,7 +356,7 @@ body {
     font-size: 55px;
     font-weight: 800;
     margin-bottom: 50px;
-    background: linear-gradient(90deg, #fff, #f1c40f);
+    background: linear-gradient(90deg,white,white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
