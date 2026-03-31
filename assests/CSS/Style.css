@@ -728,7 +728,7 @@ button {
     }
 }
 
-#pic .image {
+#pic-ab .image-ab {
     position: relative;
     display: flex;
     justify-content: center;
@@ -737,7 +737,7 @@ button {
 }
 
 
-#pic .image::before {
+#pic-ab .image-ab::before {
     content: "";
     position: absolute;
     width: 450px;
@@ -750,7 +750,7 @@ button {
 }
 
 
-#pic .image img {
+#pic-ab .image-ab img {
     width: 100%;
     max-width: 500px;
     height: auto;
@@ -759,20 +759,24 @@ button {
 }
 
 @keyframes pulseCircle {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.05); opacity: 0.9; }
+    0%, 100% {
+        transform: scale(1); opacity: 1;
+    }
+    50% {
+        transform: scale(1.05); opacity: 0.9;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    #pic .image::before {
+    #pic-ab .image-ab::before {
         width: 300px;
         height: 300px;
     }
-    #pic .image img {
+    #pic-ab .image-ab img {
         max-width: 320px;
     }
 }
-#pic .image {
+#pic-ab .image-ab {
     position: relative;
     width: 450px;
     height: 450px;
@@ -791,7 +795,7 @@ button {
 }
 
 
-#pic .image img {
+#pic-ab .image-ab img {
     width: auto;
     height: 110%;
     display: block;
@@ -804,7 +808,7 @@ button {
 }
 
 @media screen and (max-width: 600px) {
-    #pic .image {
+    #pic-ab .image {
         width: 300px;
         height: 300px;
     }
@@ -901,4 +905,16 @@ button {
     position: relative;
     overflow: hidden;
     margin-left: 150px;
+}
+
+.tech-ab-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 7fr));
+    gap: 10px;
+    margin-left: 30px;
+}
+.tech-ab-card i {
+    font-size: 40px;
+    color: #f1c40f;
+    margin-bottom: 15px;
 }
