@@ -109,8 +109,11 @@ html {
 }
 
 @media screen and (max-width: 600px) {
-    #te1 { font-size: 35px; }
-    .arrow-link i { font-size: 28px; }
+    #te1 {
+        font-size: 35px;
+    }
+    .arrow-link i { font-size: 28px;
+    }
 }
 #te2 {
     font-size: 20px; line-height: 1.5; color: #ecf0f1; margin-bottom: 30px;
@@ -918,3 +921,4 @@ button {
     color: #f1c40f;
     margin-bottom: 15px;
 }
+
