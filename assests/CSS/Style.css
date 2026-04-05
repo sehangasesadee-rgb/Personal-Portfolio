@@ -153,15 +153,15 @@ html {
     from {
         opacity: 0; transform: translateY(20px);
     } to {
-              opacity: 1; transform: translateY(0);
-          }
+          opacity: 1; transform: translateY(0);
+      }
 }
 @keyframes floatImage {
     0%, 100% {
         transform: translateY(0);
     } 50% {
-              transform: translateY(-15px);
-          }
+          transform: translateY(-15px);
+      }
 }
 
 
@@ -247,7 +247,7 @@ html {
     letter-spacing: 3px;
     font-size: 18px;
     margin-bottom: 10px;
- }
+}
 
 .gallery-container {
     display: grid;
@@ -463,25 +463,25 @@ body {
 }
 
 .contact-container {
-         display: flex;
-         justify-content: space-between;
-         padding: 80px;
-         max-width: 1000px;
-         margin: auto;
- }
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    max-width: 1000px;
+    margin: auto;
+}
 
 .title {
-         font-size: 40px;
-         margin-bottom: 30px;
-         font-family: 'Times New Roman', serif;
- }
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', serif;
+}
 
 .social-icons .icon-row1 {
-         margin-bottom: 13px;
-         display: flex;
-         gap: 15px;
+    margin-bottom: 13px;
+    display: flex;
+    gap: 15px;
 
- }
+}
 .social-icons .icon-row2{
     margin-left: 30px;
     margin-bottom: 13px;
@@ -490,36 +490,36 @@ body {
 }
 
 .social-icons i {
-         font-size: 25px;
-         padding: 10px;
-         border: 2px solid #ccc;
-         border-radius: 50%;
-         cursor: pointer;
-         transition: 0.3s;
- }
+    font-size: 25px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
 .social-icons i:hover {
-         color: #f1d521;
-         border-color: #f1d521;
- }
+    color: #f1d521;
+    border-color: #f1d521;
+}
 
 #form {
-         width: 50%;
- }
+    width: 50%;
+}
 
 input, textarea {
-         width: 100%;
-         background-color: #555;
-         border: none;
-         padding: 15px;
-         margin-bottom: 15px;
-         color: #fff;
-         font-size: 16px;
-         border-radius: 2px;
- }
+    width: 100%;
+    background-color: #555;
+    border: none;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 2px;
+}
 
 input::placeholder, textarea::placeholder {
- color: #bbb;
+    color: #bbb;
 }
 
 .button-container {
@@ -528,26 +528,26 @@ input::placeholder, textarea::placeholder {
 }
 
 .social-icons i:hover {
-  color: #f1d521;
-  border-color: #f1d521;
+    color: #f1d521;
+    border-color: #f1d521;
 }
 
 button {
-          background-color: #f1d521;
-          color: #000;
-          border: none;
-          padding: 12px 40px;
-          font-size: 18px;
-          font-weight: bold;
-          border-radius: 12px;
-          cursor: pointer;
-          transition: 0.3s;
-      }
+    background-color: #f1d521;
+    color: #000;
+    border: none;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-  button:hover {
-      background-color: #f1c40f; border-color: #f1c40f; color: black;
-      transform: scale(1.0) translateY(-8px);
-  }
+button:hover {
+    background-color: #f1c40f; border-color: #f1c40f; color: black;
+    transform: scale(1.0) translateY(-8px);
+}
 
 .btn:active {
     transform: scale(0.95) translateY(0);
@@ -570,7 +570,7 @@ button {
         margin-bottom: 30px;
     }
 
-       .social-icons {
+    .social-icons {
         align-items: center;
         margin-bottom: 20px;
     }
@@ -970,4 +970,36 @@ button {
     100% {
         transform: translateX(-50%);
     }
+}
+/*////////////////////////////////////////////*/
+
+
+#projects {
+    padding: 100px 8%;
+    text-align: center;
+    background-color: #050505;
+}
+
+.project-container-p {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card1 {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 50px 30px;
+    border-radius: 25px;
+    width: 400px;
+    transition: 0.4s all ease;
+    backdrop-filter: blur(15px);
+}
+
+.project-card1:hover {
+    transform: translateY(-15px);
+    border-color: #f1c40f;
+    background: rgba(241, 196, 15, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
