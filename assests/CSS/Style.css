@@ -451,8 +451,12 @@ html {
 
 
 @media screen and (max-width: 768px) {
-    #text-p { font-size: 40px; }
-    .project-card { width: 100%; }
+    #text-p {
+        font-size: 40px;
+    }
+    .project-card {
+        width: 100%;
+    }
 }
 
 body {
@@ -1038,3 +1042,38 @@ button:hover {
 .btn:active {
     transform: scale(0.95) translateY(0);
 }
+
+
+/*//////////////////////////////////////////////////////////////*/
+
+
+#assignments {
+    padding: 100px 8%;
+    text-align: center;
+    background-color: #050505;
+}
+
+.assignment-container-A {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.assignment-card1 {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 50px 30px;
+    border-radius: 25px;
+    width: 400px;
+    transition: 0.4s all ease;
+    backdrop-filter: blur(15px);
+}
+
+.assignment-card1:hover {
+    transform: translateY(-15px);
+    border-color: #f1c40f;
+    background: rgba(241, 196, 15, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
