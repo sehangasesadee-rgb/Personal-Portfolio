@@ -452,7 +452,7 @@ html {
 
 @media screen and (max-width: 768px) {
     #text-p {
-        font-size: 40px;
+        font-size: 25px;
     }
     .project-card {
         width: 100%;
