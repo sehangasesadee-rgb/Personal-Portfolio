@@ -327,7 +327,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 35px;
+    gap: 25px;
 }
 
 .tech-card {
@@ -369,8 +369,8 @@ html {
         font-size: 25px;
     }
     .tech-card {
-        /*min-width: 100px;*/
-        /*padding: 20px;*/
+        min-width: 100px;
+        padding: 20px;
         grid-template-columns: 1fr;
 
     }
