@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -1089,27 +1085,147 @@ button:hover {
 /*    transform: scale(0.95) translateY(0);*/
 
 
+/*/////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////*/
+/*#projects {*/
+/*    padding: 60px 5%;*/
+/*    text-align: center;*/
+/*    background-color: #050505;*/
+/*    width: 100%;*/
+/*}*/
 
+/*h1{*/
+/*    text-align: center;*/
+/*    margin: 40px 0 10px 0;*/
+/*    color: white;font-size: clamp(28px,5vw,45px);*/
+/*}*/
+/*!*.project-container-p {*!*/
+/*!*    display: flex;*!*/
+/*!*    justify-content: center;*!*/
+/*!*    gap: 25px;*!*/
+/*!*    flex-wrap: wrap;*!*/
+/*!*    width: 100%;*!*/
+/*!*}*!*/
+
+/*.project-container-p {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    gap: 30px;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*!*.project-card1 {*!*/
+/*!*    background: rgba(255, 255, 255, 0.03);*!*/
+/*!*    border: 1px solid rgba(255, 255, 255, 0.1);*!*/
+/*!*    padding: 35px 20px;*!*/
+/*!*    border-radius: 20px;*!*/
+/*!*    width: 350px;*!*/
+/*!*    transition: 0.4s ease;*!*/
+/*!*    backdrop-filter: blur(15px);*!*/
+/*!*    display: flex;*!*/
+/*!*    flex-direction: column;*!*/
+/*!*    align-items: center;*!*/
+/*!*    text-align: center;*!*/
+/*!*}*!*/
+
+/*.project-card1 {*/
+/*    background: rgba(255, 255, 255, 0.03);*/
+/*    border: 1px solid rgba(255, 255, 255, 0.1);*/
+/*    padding: 50px 30px;*/
+/*    border-radius: 25px;*/
+/*    width: 400px;*/
+/*    flex-direction: column;*/
+/*    display: flex;*/
+/*    transition: 0.4s all ease;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*    backdrop-filter: blur(15px);*/
+/*}*/
+
+/*.project-card1:hover {*/
+/*    transform: translateY(-10px);*/
+/*    border-color: #f1c40f;*/
+/*    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);*/
+/*}*/
+
+/*.icon-box i {*/
+/*    font-size: 55px;*/
+/*    margin-bottom: 20px;*/
+/*    color: #f1c40f;*/
+/*}*/
+
+/*.project-card1 h3 {*/
+/*    font-size: 19px;*/
+/*    color: #fff;*/
+/*    margin-bottom: 25px;*/
+/*    min-height: 50px;*/
+/*}*/
+
+
+/*.btn-group-p {*/
+/*    display: flex;*/
+/*    gap: 12px;*/
+/*    width: 100%;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.btn-group-p .btn {*/
+/*    flex: 1;*/
+/*    padding: 12px 5px;*/
+/*    border-radius: 8px;*/
+/*    text-decoration: none;*/
+/*    font-weight: bold;*/
+/*    font-size: 14px;*/
+/*    text-align: center;*/
+/*    transition: 0.3s;*/
+/*    background-color: #f1c40f;*/
+/*    color: #000;*/
+/*}*/
+
+
+
+/*@media screen and (max-width: 992px) {*/
+/*    .project-card1 {*/
+/*        width: 45%;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 600px) {*/
+/*    #projects {*/
+/*        padding: 20px 15px;*/
+/*    }*/
+
+/*    .project-card1 {*/
+/*        width: 100%;*/
+/*        max-width: 380px;*/
+/*        padding: 30px 15px;*/
+/*    }*/
+
+/*    .btn-group-p .btn {*/
+/*        font-size: 13px;*/
+/*    }*/
+/*}*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0 10px 0;
+    color: white;
+    font-size: clamp(28px, 5vw, 45px);
+}
 
 #projects {
-    padding: 60px 5%;
+    padding: 60px 8%;
     text-align: center;
     background-color: #050505;
     width: 100%;
 }
-
-h1{
-    text-align: center;
-    margin: 40px 0 10px 0;
-    color: white;font-size: clamp(28px,5vw,45px);
-}
-/*.project-container-p {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    gap: 25px;*/
-/*    flex-wrap: wrap;*/
-/*    width: 100%;*/
-/*}*/
 
 .project-container-p {
     display: flex;
@@ -1118,31 +1234,17 @@ h1{
     flex-wrap: wrap;
 }
 
-/*.project-card1 {*/
-/*    background: rgba(255, 255, 255, 0.03);*/
-/*    border: 1px solid rgba(255, 255, 255, 0.1);*/
-/*    padding: 35px 20px;*/
-/*    border-radius: 20px;*/
-/*    width: 350px;*/
-/*    transition: 0.4s ease;*/
-/*    backdrop-filter: blur(15px);*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*    text-align: center;*/
-/*}*/
-
 .project-card1 {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 50px 30px;
     border-radius: 25px;
     width: 400px;
-    flex-direction: column;
     display: flex;
-    transition: 0.4s all ease;
+    flex-direction: column;
     align-items: center;
     text-align: center;
+    transition: 0.4s all ease;
     backdrop-filter: blur(15px);
 }
 
@@ -1187,12 +1289,12 @@ h1{
 }
 
 
-
 @media screen and (max-width: 992px) {
     .project-card1 {
         width: 45%;
     }
 }
+
 
 @media screen and (max-width: 600px) {
     #projects {
@@ -1201,8 +1303,13 @@ h1{
 
     .project-card1 {
         width: 100%;
-        max-width: 380px;
-        padding: 30px 15px;
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+
+    .btn-group-p {
+        width: 100%;
+        gap: 10px;
     }
 
     .btn-group-p .btn {
