@@ -971,58 +971,6 @@ button:hover {
     }
 }
 
-/*@media screen and (max-width: 992px) {*/
-/*    .profile-container {*/
-/*        flex-direction: column;*/
-/*        text-align: center;*/
-/*        gap: 60px;*/
-/*    }*/
-
-/*    .image-ab {*/
-/*        width: 350px;*/
-/*        height: 350px;*/
-/*    }*/
-
-/*    #education {*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*    }*/
-
-/*    .Scl-container, .ijse-container {*/
-/*        width: 100%;*/
-/*        max-width: 500px;*/
-/*    }*/
-/*}*/
-
-/*@media screen and (max-width: 600px) {*/
-/*    #nav {*/
-/*        justify-content: center;*/
-/*        gap: 15px;*/
-/*        font-size: 14px;*/
-/*    }*/
-
-/*    .about-main {*/
-/*        padding: 40px 5%;*/
-/*        gap: 60px;*/
-/*    }*/
-
-/*    .image-ab {*/
-/*        width: 280px;*/
-/*        height: 280px;*/
-/*    }*/
-
-/*    .gradient-title {*/
-/*        font-size: 32px;*/
-/*    }*/
-
-/*    .tech-items i {*/
-/*        font-size: 35px;*/
-/*    }*/
-
-/*    #education h3 {*/
-/*        font-size: 20px;*/
-/*    }*/
-/*}*/
 
 h1{
     text-align: center;
