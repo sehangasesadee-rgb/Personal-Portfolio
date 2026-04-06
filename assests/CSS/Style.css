@@ -978,7 +978,11 @@ button:hover {
     }
 }
 /*////////////////////////////////////////////*/
-
+h1{
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
 
 #projects {
     padding: 100px 8%;
