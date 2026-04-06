@@ -371,7 +371,7 @@ html {
     .tech-card {
         /*min-width: 100px;*/
         width: 50%;
-        padding: 20px;
+        padding:0px;
         grid-template-columns: 2fr;
 
     }
