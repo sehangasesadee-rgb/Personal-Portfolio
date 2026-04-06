@@ -730,6 +730,9 @@ button:hover {
 
 
 @media (max-width: 992px) {
+    .gradient-title{
+        text-align: center;
+    }
     .profile-container {
         flex-direction: column;
         text-align: center;
@@ -822,23 +825,15 @@ button:hover {
     filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
 }
 
-/*@media screen and (max-width: 600px) {*/
-/*    #pic-ab .image {*/
-/*        width: 100px;*/
-/*        height: 100px;*/
-/*    }*/
-/*}*/
-
-/* --- Tablet Size (Max 992px) --- */
 @media screen and (max-width: 992px) {
     #pic-ab .image-ab {
-        width: 320px;   /* Tab එකට ගැලපෙන රවුමේ පළල */
+        width: 320px;
         height: 320px;
     }
 
     #pic-ab .image-ab img {
-        height: 110%;   /* රවුමට සාපේක්ෂව පින්තූරයේ උස */
-        left: 50%;      /* මැදට ගැනීමට (Center) */
+        height: 110%;
+        left: 50%;
         transform: translateX(-50%);
     }
 }
@@ -893,30 +888,6 @@ button:hover {
 }
 
 
-/*.tech-ab-card{*/
-/*    display: grid;*/
-/*    grid-template-columns: repeat(auto-fit, minmax(20px, 7fr));*/
-/*    gap: 10px;*/
-/*    margin-left: 30px;*/
-/*    animation-name:ab-card-an ;*/
-/*}*/
-/*.tech-ab-card i {*/
-/*    font-size: 40px;*/
-/*    color: #f1c40f;*/
-/*    margin-bottom: 15px;*/
-/*}*/
-/*@keyframes ab-card-an {*/
-/*    from{*/
-/*        left: 50px;*/
-
-/*    }*/
-/*    to{*/
-/*        left: -5000px;*/
-
-/*    }*/
-
-/*}*/
-
 #tech-ab {
     width: 100%;
     overflow: hidden;
@@ -964,28 +935,50 @@ button:hover {
         gap: 60px;
     }
 
-    .image-ab { width: 350px; height: 350px; }
+    .image-ab {
+        width: 350px;
+        height: 350px;
+    }
 
     #education {
         flex-direction: column;
         align-items: center;
     }
 
-    .Scl-container, .ijse-container { width: 100%; max-width: 500px; }
+    .Scl-container, .ijse-container {
+        width: 100%;
+        max-width: 500px;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    #nav { justify-content: center; gap: 15px; font-size: 14px; }
+    #nav {
+        justify-content: center;
+        gap: 15px;
+        font-size: 14px;
+    }
 
-    .about-main { padding: 40px 5%; gap: 60px; }
+    .about-main {
+        padding: 40px 5%;
+        gap: 60px;
+    }
 
-    .image-ab { width: 280px; height: 280px; }
+    .image-ab {
+        width: 280px;
+        height: 280px;
+    }
 
-    .gradient-title { font-size: 32px; }
+    .gradient-title {
+        font-size: 32px;
+    }
 
-    .tech-items i { font-size: 35px; }
+    .tech-items i {
+        font-size: 35px;
+    }
 
-    #education h3 { font-size: 20px; }
+    #education h3 {
+        font-size: 20px;
+    }
 }
 
 h1{
