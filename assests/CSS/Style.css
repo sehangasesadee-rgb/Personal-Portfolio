@@ -1094,4 +1094,91 @@ h1{
     background-color: #f1c40f; color: black;
 }
 
+body {
+    background-color: #0a0a0a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
 
+
+
+#project-display {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+#c-text {
+    color: #f1c40f;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.connect-four-ss-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.ss-cg {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.4s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ss-cg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #111;
+    transition: 0.5s ease;
+}
+
+
+.ss-cg:hover {
+    transform: translateY(-10px);
+    border-color: #f1c40f;
+    box-shadow: 0 15px 35px rgba(241, 196, 15, 0.2);
+}
+
+.ss-cg:hover img {
+    transform: scale(1.05);
+    filter: brightness(80%);
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .connect-four-ss-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .connect-four-ss-container {
+        grid-template-columns: 1fr;
+    }
+
+    #nav {
+        justify-content: center;
+        padding: 15px;
+    }
+
+    #nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+}
