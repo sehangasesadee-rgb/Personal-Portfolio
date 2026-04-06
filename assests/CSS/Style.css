@@ -628,16 +628,10 @@ button:hover {
         border-radius: 8px;
         outline: none;
         transition: 0.3s;
-    }
-
-    #form input, #form textarea {
-        font-size: 14px;
-        padding: 12px;
-    }
-    #form input:focus,
-    #form textarea:focus {
         border-color: #f1d521;
     }
+
+
 
     #form button {
         width: 30%;
