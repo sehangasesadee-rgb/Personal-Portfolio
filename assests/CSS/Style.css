@@ -481,7 +481,34 @@ body {
     max-width: 1000px;
     margin: auto;
 }
+/*.form-con{*/
+/*    border-radius: 30px;*/
+/*    border: #ccc solid;*/
+/*    padding: 50px;*/
 
+
+/*}*/
+
+.form-con {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 60px 50px;
+
+
+    transition: 0.5s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backdrop-filter: blur(15px);
+    position: relative;
+    overflow: hidden;
+}
+
+.form-con:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #f1c40f;
+    background: rgba(241, 196, 15, 0.02);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6),
+    0 0 30px rgba(241, 196, 15, 0.2);
+}
 .title {
     font-size: 40px;
     margin-bottom: 30px;
@@ -625,10 +652,9 @@ button:hover {
         width: 100%;
         padding: 25px 20px 10px;
         /*border-radius: 15px;*/
-        border-radius: 8px;
+        border-radius: 15px;
         outline: none;
         transition: 0.3s;
-        border-color: #f1d521;
     }
 
 
