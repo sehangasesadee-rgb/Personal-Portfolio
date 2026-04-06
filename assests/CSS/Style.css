@@ -624,12 +624,19 @@ button:hover {
     #form {
         width: 100%;
         padding: 25px 20px 10px;
-        border-radius: 15px;
+        /*border-radius: 15px;*/
+        border-radius: 8px;
+        outline: none;
+        transition: 0.3s;
     }
 
     #form input, #form textarea {
         font-size: 14px;
         padding: 12px;
+    }
+    #form input:focus,
+    #form textarea:focus {
+        border-color: #f1d521;
     }
 
     #form button {
