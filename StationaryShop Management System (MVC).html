@@ -2,25 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Nadee Trading Project | Portfolio</title>
     <link rel="stylesheet" href="assests/CSS/Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
 <body>
+
 <section id="nav">
     <a href="index.html#contact">Contact</a>
     <a href="index.html#project-assignment">Project</a>
     <a href="index.html#about">About</a>
     <a href="index.html#home">Home</a>
+</section>
 
+<section id="project-display-st">
+    <div id="sm-text">Stationary Management System(MVC)</div>
+
+    <div class="la-st-ss-container">
+        <div class="ss-cg"><img src="assests/lib/image/ss1.png" alt="SS 1"></div>
+        <div class="ss-cg"><img src="assests/lib/image/ss2.png" alt="SS 2"></div>
+        <div class="ss-cg"><img src="assests/lib/image/ss3.png" alt="SS 3"></div>
+        <div class="ss-cg"><img src="assests/lib/image/ss4.png" alt="SS 4"></div>
+        <div class="ss-cg"><img src="assests/lib/image/ss5.png" alt="SS 5"></div>
+        <div class="ss-cg"><img src="assests/lib/image/ss6.png" alt="SS 6"></div>
+        <div class="ss-cg"><img src="assests/lib/image/ss7.png" alt="SS 7"></div>
+        <div class="ss-cg"><img src="assests/lib/image/ss8.png" alt="SS 8"></div>
+    </div>
+
+    <div class="details-wrapper-st">
+
+        <div class="info-card">
+            <h3>1. Project Core & Purpose</h3>
+            <p><strong>Objective:</strong> To develop a robust Desktop Application for Nadee Trading Company, focusing on business operations, inventory, or sales management.</p>
+            <p><strong>Target Audience:</strong> This project is designed as a professional-grade software solution, likely part of an advanced software engineering module at IJSE.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>2. Technical Framework (The Stack)</h3>
+            <div class="tech-list">
+                <span><i class="fab fa-java"></i> <b>Java 11:</b> Modern, scalable ecosystem.</span>
+                <span><i class="fas fa-box-open"></i> <b>Maven:</b> Build automation & dependency management.</span>
+                <span><i class="fas fa-desktop"></i> <b>JavaFX 13:</b> Layout-driven UI with FXML.</span>
+                <span><i class="fas fa-vial"></i> <b>ControlsFX:</b> High-quality UI components & validation.</span>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <h3>3. Key Project Components</h3>
+            <p><strong>Database:</strong> MySQL (via mysql-connector-j) for reliable data persistence.</p>
+            <p><strong>Reporting:</strong> JasperReports v7.0.3 for generating invoices, receipts, and monthly reports.</p>
+            <p><strong>Main Entry:</strong> Starts through <code>lk.ijse.nadeetradingcompany.App</code> class.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>4. Setup & Execution</h3>
+                <p> Import <code>pom.xml</code> into IntelliJ IDEA.</p>
+                <p> Maven Command: <code>mvn clean javafx:run</code></p>
+                <p> Debugging: Uses JPDA via <code>nbactions.xml</code>.</p>
+                <p> Deployment: Prepared with <b>jlink</b> for distribution.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>5. Development Strategy</h3>
+            <p><strong>Layered Architecture:</strong> Organised to separate concerns (UI, Business Logic, and Database Access).</p>
+            <p><strong>Deployment:</strong> Prepared for custom Java Runtime Image creation using <code>jlink</code> for easy distribution.</p>
+        </div>
+
+    </div>
 </section>
 
 <section id="footer">
     <div id="footer-image">
         <img src="assests/lib/image/ChatGPT%20Image%20Mar%205,%202026,%2001_25_13%20AM.png" alt="footer-image" class="f-image">
     </div>
-
 </section>
 
 </body>
