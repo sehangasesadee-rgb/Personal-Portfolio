@@ -183,7 +183,10 @@ html {
 }
 
 .btn-yellow, .btn-download { background-color: #f1c40f; color: black; }
-.btn-outline { border: 2px solid white; color: white; }
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+}
 
 .btn:hover {
     transform: scale(1.0) translateY(-8px);
@@ -191,7 +194,9 @@ html {
 }
 
 .btn-outline:hover {
-    background-color: #f1c40f; border-color: #f1c40f; color: black;
+    background-color: #f1c40f;
+    border-color: #f1c40f;
+    color: black;
 }
 
 .btn:active {
@@ -201,13 +206,18 @@ html {
 
 @media screen and (max-width: 992px) {
     .main-container, .about {
-        flex-direction: column; text-align: center; padding: 50px 5%;
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
     }
     #text, #text02 {
-        padding: 0; margin-bottom: 40px; order: 2;
+        padding: 0;
+        margin-bottom: 40px;
+        order: 2;
     }
     #pic, #about_pic {
-        order: 1; margin-bottom: 30px;
+        order: 1;
+        margin-bottom: 30px;
     }
     #t2, #te1 {
         font-size: 50px;
@@ -218,12 +228,12 @@ html {
 }
 
 @media screen and (max-width: 600px) {
-    #nav {
-        padding: 10px; justify-content: center; flex-wrap: wrap;
-    }
-    #nav > a {
-        font-size: 14px; padding: 8px 12px;
-    }
+    /*#nav {*/
+    /*    padding: 10px; justify-content: center; flex-wrap: wrap;*/
+    /*}*/
+    /*#nav > a {*/
+    /*    font-size: 14px; padding: 8px 12px;*/
+    /*}*/
     #t2, #te1 {
         font-size: 35px;
     }
