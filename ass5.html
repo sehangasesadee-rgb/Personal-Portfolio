@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 05</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .slider-container {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            width: 400%;
+            height: 100%;
+            animation-name: slide;
+            animation-iteration-count: infinite;
+            animation-duration: 10000ms;
+            animation-direction: alternate-reverse;
+        }
+
+        .slider-wrapper img {
+            width: 100vw;
+            height: 100vh;
+        }
+
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            25% { transform: translateX(-25%); }
+            45% { transform: translateX(-25%); }
+            50% { transform: translateX(-50%); }
+            70% { transform: translateX(-50%); }
+            75% { transform: translateX(-75%); }
+            95% { transform: translateX(-75%); }
+            100% { transform: translateX(0); }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="slider-container">
+    <div class="slider-wrapper">
+        <img src="assests/lib/image/backiee-208441-landscape.jpg" alt="Img 1">
+        <img src="assests/lib/image/sadu8.jpg" alt="Img 2">
+        <img src="assests/lib/image/wall.png" alt="Img 3">
+        <img src="assests/lib/image/Wallpaper%20girl%20feminist%20_%20cukkiiiii%20in%202019%20_%20hátterek%20_%20Computer%20screen%20wallpaper,%20Laptop%20wallpaper%20desktop%20wallpapers,%20Laptop%20wallpaper.jpeg" alt="Img 4">
+    </div>
+</div>
+
+</body>
+</html>
+
+

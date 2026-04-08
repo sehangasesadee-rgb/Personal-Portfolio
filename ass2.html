@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case02</title>
+    <meta name="keywords" content="web, html, css, javascript, js, java, python">
+    <meta name="description" content="World best web development tutorials">
+    <meta name="author" content="IJSE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/normalize.css">
+
+    <style>
+
+        body{
+            background: deepskyblue;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .circle{
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-iteration-count: infinite;
+            animation-play-state: paused;
+            animation-duration: 3000ms;
+        }
+        #circle1{
+            background:conic-gradient(white 80%, red 20%);
+            width: 300px;
+            aspect-ratio: 1/1;
+            position: relative;
+            animation-name: circleRun;
+
+        }
+        .text{
+            font-size: 35px;
+            color: white;
+            font-family: "Fjalla One", sans-serif;
+        }
+        #circle2{
+            background: lightslategray;
+            width: 280px;
+            aspect-ratio: 1/1;
+            animation-name: circleRunReverse;
+        }
+        #circle1:hover #circle2 {
+            animation-play-state: running;
+        }
+
+        @keyframes circleRun {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+
+        }
+        @keyframes circleRunReverse {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(-360deg);
+            }
+
+        }
+
+        #circle1:hover{
+            animation-play-state: running;
+
+
+        }
+    </style>
+</head>
+<body>
+
+<div id="circle1" class="circle">
+    <div id="circle2" class="circle">
+        <div class="text">RWAD</div>
+    </div>
+</div>
+
+</body>
+</html>
+
