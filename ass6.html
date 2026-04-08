@@ -1,143 +1,282 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Case 06</title>-->
+<!--    <meta name="keywords" content="web, html, css, javascript, js, java, python">-->
+<!--    <meta name="description" content="World best web development tutorials">-->
+<!--    <meta name="author" content="IJSE">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <link rel="stylesheet" href="../assets/normalize.css">-->
+
+<!--    <style>-->
+
+<!--        body{-->
+<!--            overflow: hidden;-->
+<!--        }-->
+<!--        .content{-->
+<!--            width: 10000%;-->
+<!--            height: 700px;-->
+<!--            background-image: url("assests/Car_Animation_Img/sky.jpg");-->
+<!--            background-size: cover;-->
+<!--            position: relative;-->
+<!--            overflow: hidden;-->
+<!--        }-->
+<!--        .city{-->
+<!--            width: 10000%;-->
+<!--            height: 600px;-->
+<!--            background-image: url("assests/Car_Animation_Img/city.png");-->
+<!--            position: absolute;-->
+<!--            bottom: 300px;-->
+<!--            top: 0;-->
+<!--            animation-duration: 10000ms;-->
+<!--            animation-direction: normal;-->
+<!--            animation-iteration-count: infinite;-->
+<!--            animation-timing-function: ease-out;-->
+<!--            animation-name: cityMove;-->
+<!--            overflow: hidden;-->
+
+<!--        }-->
+<!--        .road{-->
+<!--            width: 10000%;-->
+<!--            height: 300px;-->
+<!--            background-image: url("assests/Car_Animation_Img/road.jpg");-->
+<!--            position: absolute;-->
+<!--            bottom: 0;-->
+<!--            top: 250px;-->
+<!--            animation-duration: 10000ms;-->
+<!--            animation-iteration-count: infinite;-->
+<!--            animation-timing-function: ease-out;-->
+<!--            animation-name: cityMove;-->
+
+<!--        }-->
+<!--        .car-body{-->
+<!--            width: 400px;-->
+<!--            height: 200px;-->
+<!--            /*animation-name: myanimation;*/-->
+<!--            animation-duration: 10000ms;-->
+<!--            animation-iteration-count: infinite;-->
+<!--            /*animation-timing-function: ease-out;*/-->
+<!--            left: 500px;-->
+<!--            position: absolute;-->
+<!--            z-index: 1000;-->
+<!--            background-repeat: no-repeat;-->
+<!--            top: 260px;-->
+
+
+<!--        }-->
+<!--        .car{-->
+<!--            bottom: 100px;-->
+
+<!--        }-->
+<!--        .car-wheel{-->
+<!--            width: 75px;-->
+<!--            height: 75px;-->
+<!--            z-index: 1000;-->
+<!--            animation-duration: 3000ms;-->
+<!--            /*animation-name: wheel;*/-->
+<!--            animation-iteration-count: infinite;-->
+<!--            animation-timing-function: ease-out;-->
+<!--            animation-name: wheelRotate;-->
+
+<!--        }-->
+<!--        #wheel1{-->
+<!--            margin-left: 535px;-->
+<!--            margin-top: 366px;-->
+<!--            z-index: 1000;-->
+<!--            position: absolute;-->
+
+<!--        }-->
+<!--        #wheel2{-->
+<!--            margin-left: 778px;-->
+<!--            margin-top: 366px;-->
+<!--            z-index: 1000;-->
+<!--            position: absolute;-->
+
+<!--        }-->
+
+
+<!--        @keyframes wheelRotate {-->
+<!--            from{-->
+<!--                transform: rotate(0deg);-->
+
+<!--            }-->
+<!--            to{-->
+<!--                transform: rotate(360deg);-->
+<!--            }-->
+<!--        }-->
+<!--        @keyframes cityMove {-->
+<!--            from{-->
+<!--                left: 50px;-->
+
+<!--            }-->
+<!--            to{-->
+<!--                left: -5000px;-->
+
+
+<!--            }-->
+<!--        }-->
+<!--        /*@keyframes wheel {*/-->
+<!--        /*    from{*/-->
+<!--        /*        left: 50px;*/-->
+
+<!--        /*    }*/-->
+<!--        /*    to{*/-->
+<!--        /*        left: 700px;*/-->
+<!--        /*    }*/-->
+<!--        /*}*/-->
+
+
+
+<!--        /*@keyframes myanimation {*/-->
+<!--        /*    from{ !*keyframe 01*!*/-->
+<!--        /*        margin-left:50px;*/-->
+
+<!--        /*    }*/-->
+<!--        /*    to{!*keyframe 02*!*/-->
+<!--        /*        margin-left: 700px;*/-->
+<!--        /*    }*/-->
+<!--        /*}*/-->
+
+
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="content">-->
+<!--    <div class="city"></div>-->
+<!--    <div class="road"></div>-->
+<!--    <div class="car">-->
+
+<!--        <img src="assests/Car_Animation_Img/car.png" class="car-body">-->
+<!--        <img src="assests/Car_Animation_Img/wheel.png" class="car-wheel" id="wheel1">-->
+<!--        <img src="assests/Car_Animation_Img/wheel.png" class="car-wheel" id="wheel2">-->
+
+
+<!--    </div>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Case 06</title>
-    <meta name="keywords" content="web, html, css, javascript, js, java, python">
-    <meta name="description" content="World best web development tutorials">
-    <meta name="author" content="IJSE">
+    <title>Responsive Car Animation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/normalize.css">
 
     <style>
-
-        body{
+        body {
+            margin: 0;
+            padding: 0;
             overflow: hidden;
+            background-color: #222;
         }
-        .content{
+
+        .content {
             width: 10000%;
-            height: 700px;
+            height: 100vh;
             background-image: url("assests/Car_Animation_Img/sky.jpg");
             background-size: cover;
             position: relative;
             overflow: hidden;
+            transform-origin: top left;
+            transition: transform 0.3s ease;
         }
-        .city{
+
+        .city {
             width: 10000%;
             height: 600px;
             background-image: url("assests/Car_Animation_Img/city.png");
             position: absolute;
-            bottom: 300px;
             top: 0;
-            animation-duration: 10000ms;
-            animation-direction: normal;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-out;
-            animation-name: cityMove;
-            overflow: hidden;
-
+            animation: cityMove 10s infinite linear;
         }
-        .road{
+
+        .road {
             width: 10000%;
             height: 300px;
             background-image: url("assests/Car_Animation_Img/road.jpg");
             position: absolute;
-            bottom: 0;
             top: 250px;
-            animation-duration: 10000ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-out;
-            animation-name: cityMove;
-
+            animation: cityMove 10s infinite linear;
         }
-        .car-body{
+
+        .car-body {
             width: 400px;
-            height: 200px;
-            /*animation-name: myanimation;*/
-            animation-duration: 10000ms;
-            animation-iteration-count: infinite;
-            /*animation-timing-function: ease-out;*/
+            height: auto;
             left: 500px;
             position: absolute;
             z-index: 1000;
-            background-repeat: no-repeat;
             top: 260px;
-
-
         }
-        .car{
-            bottom: 100px;
 
-        }
-        .car-wheel{
+        .car-wheel {
             width: 75px;
             height: 75px;
-            z-index: 1000;
-            animation-duration: 3000ms;
-            /*animation-name: wheel;*/
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-out;
-            animation-name: wheelRotate;
-
-        }
-        #wheel1{
-            margin-left: 535px;
-            margin-top: 366px;
-            z-index: 1000;
+            z-index: 1001;
             position: absolute;
-
+            animation: wheelRotate 1s infinite linear;
         }
-        #wheel2{
-            margin-left: 778px;
-            margin-top: 366px;
-            z-index: 1000;
-            position: absolute;
 
+        #wheel1 {
+            left: 535px;
+            top: 366px;
+        }
+
+        #wheel2 {
+            left: 778px;
+            top: 366px;
         }
 
 
         @keyframes wheelRotate {
-            from{
+            from {
                 transform: rotate(0deg);
-
             }
-            to{
+            to {
                 transform: rotate(360deg);
             }
         }
+
         @keyframes cityMove {
-            from{
-                left: 50px;
-
+            from {
+                transform: translateX(0);
             }
-            to{
-                left: -5000px;
-
-
+            to {
+                transform: translateX(-5000px);
             }
         }
-        /*@keyframes wheel {*/
-        /*    from{*/
-        /*        left: 50px;*/
 
-        /*    }*/
-        /*    to{*/
-        /*        left: 700px;*/
-        /*    }*/
-        /*}*/
+        @media (max-width: 1024px) {
+            .content {
+                transform: scale(0.8);
+            }
+        }
 
 
+        @media (max-width: 768px) {
+            .content {
+                transform: scale(0.5);
+            }
+            .car-body, .car-wheel {
+                left: 100px;
+            }
+            #wheel1 {
+                left: 135px;
+            }
+            #wheel2 {
+                left: 378px;
+            }
+        }
 
-        /*@keyframes myanimation {*/
-        /*    from{ !*keyframe 01*!*/
-        /*        margin-left:50px;*/
-
-        /*    }*/
-        /*    to{!*keyframe 02*!*/
-        /*        margin-left: 700px;*/
-        /*    }*/
-        /*}*/
-
+        @media (max-width: 480px) {
+            .content {
+                transform: scale(0.35);
+            }
+        }
 
     </style>
 </head>
@@ -146,16 +285,11 @@
     <div class="city"></div>
     <div class="road"></div>
     <div class="car">
-
         <img src="assests/Car_Animation_Img/car.png" class="car-body">
         <img src="assests/Car_Animation_Img/wheel.png" class="car-wheel" id="wheel1">
         <img src="assests/Car_Animation_Img/wheel.png" class="car-wheel" id="wheel2">
-
-
     </div>
 </div>
 
 </body>
 </html>
-
-
