@@ -10,93 +10,33 @@
     <link rel="stylesheet" href="../assets/normalize.css">
     <link rel="stylesheet" href="https://www.hxstrive.com/cdn/libs/font-awesome/7.0.1/css/all.min.css">
 
-<!--    <style>-->
-
-<!--        body{-->
-<!--            margin-top: 60px;-->
-<!--            margin-left: 0;-->
-<!--        }-->
-<!--        .nav{-->
-<!--            display: flex;-->
-<!--            gap: 30px;-->
-<!--            flex-direction: column;-->
-<!--        }-->
-<!--        .main{-->
-<!--            background: blueviolet;-->
-<!--            width:  60px;-->
-<!--            height: 50px;-->
-<!--            display: flex;-->
-<!--            border-radius: 0 5px 5px 0;-->
-<!--            justify-content: space-between;-->
-<!--            align-items: center;-->
-<!--            overflow: hidden;-->
-<!--            transition-duration: 3000ms;-->
-
-<!--        }-->
-
-<!--        .main:hover{-->
-<!--            width: 250px;-->
-
-<!--        }-->
-
-<!--        .main .text {-->
-<!--            color: white;-->
-<!--            padding-left: 20px;-->
-<!--            font-weight: 600;-->
-<!--            white-space: nowrap;-->
-<!--            opacity: 0;-->
-<!--            transition: opacity 0.2s;-->
-<!--        }-->
-
-<!--        .main:hover .text {-->
-<!--            opacity: 1;-->
-<!--        }-->
-<!--        .main .img{-->
-<!--            min-width: 60px;-->
-<!--            height: 60px;-->
-<!--            display: flex;-->
-<!--            justify-content: center;-->
-<!--            align-items: center;-->
-<!--            font-size: 24px;-->
-<!--        }-->
-
-
-
-
-<!--    </style>-->
-
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
 
-        .nav {
+        body{
+            margin-top: 60px;
+            margin-left: 0;
+        }
+        .nav{
             display: flex;
             gap: 30px;
             flex-direction: column;
-            position: fixed;
-            top: 60px;
-            left: 0;
-            transform-origin: top left;
-            transition: transform 0.3s ease;
         }
-
-        .main {
+        .main{
             background: blueviolet;
-            width: 60px;
+            width:  60px;
             height: 50px;
             display: flex;
             border-radius: 0 5px 5px 0;
             justify-content: space-between;
             align-items: center;
             overflow: hidden;
-            transition: width 0.5s ease;
+            transition-duration: 3000ms;
+
         }
 
-        .main:hover {
+        .main:hover{
             width: 250px;
+
         }
 
         .main .text {
@@ -111,8 +51,7 @@
         .main:hover .text {
             opacity: 1;
         }
-
-        .main .img {
+        .main .img{
             min-width: 60px;
             height: 60px;
             display: flex;
@@ -122,26 +61,8 @@
         }
 
 
-        @media (max-width: 1024px) {
-            .nav {
-                transform: scale(0.8);
-                top: 40px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav {
-                transform: scale(0.6);
-                top: 20px;
-            }
-        }
 
 
-        @media (max-width: 480px) {
-            .nav {
-                transform: scale(0.5);
-            }
-        }
     </style>
 
 </head>
