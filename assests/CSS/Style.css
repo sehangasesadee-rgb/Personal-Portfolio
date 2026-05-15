@@ -1363,3 +1363,26 @@ code {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 
 }
+#footer-image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.f-image {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.watermark {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
